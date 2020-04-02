@@ -74,8 +74,8 @@ class ShapesPainter extends CustomPainter {
           (size.height / 2) + (change / 2) + length,
         ),
       ),
-      -pi,
       0,
+      pi,
       false,
     );
     doubler.close();

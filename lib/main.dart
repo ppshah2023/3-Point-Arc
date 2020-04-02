@@ -64,14 +64,18 @@ class ShapesPainter extends CustomPainter {
       true,
     );
     doubler.arcTo(
-      Rect.fromLTWH(
-        (size.width / 2) - (length / 2),
-        (size.height / 2) + (change / 2),
-        length,
-        length,
+      Rect.fromPoints(
+        Offset(
+          (size.width / 2) + (length / 2),
+          (size.height / 2) + (change / 2),
+        ),
+        Offset(
+          (size.width / 2) - (length / 2),
+          (size.height / 2) + (change / 2) + length,
+        ),
       ),
+      -pi,
       0,
-      pi,
       false,
     );
     doubler.close();
